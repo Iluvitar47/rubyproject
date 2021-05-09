@@ -19,13 +19,13 @@ class UsersController < ApplicationController
       redirect_to root_path
     end
   end
-  private def 
-  @user :: User;find(params[:id])  
+  def 
+  @user = User.find(params[:id])  
   end 
   def user_params
   params.require(:user).permit(:email, :password)
   end 
-end-of-input
+end
 
 #syntax error, unexpected '=', expecting '.' or :: (SyntaxError)
 #@user = User.find(params[:id]) 
