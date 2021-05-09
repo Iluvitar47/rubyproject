@@ -25,7 +25,7 @@ end-of-input
   def user_params
   params.require(:user).permit(:email, :password)
   end 
-end
+end-of-input
 
 #syntax error, unexpected '=', expecting '.' or :: (SyntaxError)
 #@user = User.find(params[:id]) 
