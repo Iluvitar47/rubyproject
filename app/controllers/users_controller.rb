@@ -20,9 +20,8 @@ class UsersController < ApplicationController
     end
   end
   def 
-  @user = User.find(params[:id])  
-end-of-input
-end-of-input
+  @user.User.find(params[:id])  
+  end 
   def user_params
   params.require(:user).permit(:email, :password)
   end 
